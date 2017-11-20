@@ -57,7 +57,6 @@ SELECT Projects.category, Pledges.amount
 FROM Projects
 INNER JOIN Pledges
 ON Projects.id = Pledges.project_id
-WHERE Projects.category = 'music'
 GROUP BY Projects.category
 "
 end
